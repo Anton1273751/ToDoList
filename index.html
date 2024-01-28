@@ -10,8 +10,8 @@
   <body>
     <main>
       <section class="ToDoList">
-        <div class="container">
-          <h1 class="ToDoList__title">ToDo List</h1>
+        <h1 class="ToDoList__title">ToDo List</h1>
+        <div class="container wrap">
           <form class="form">
             <input
               class="form__text"
@@ -20,6 +20,42 @@
             />
             <button class="form__btn">Добавить</button>
           </form>
+          <div class="lists">
+            <div class="list">
+              <div class="list__wrap-box">
+                <input class="list__checkbox" type="checkbox" />
+                <p class="list__text">
+                  Сделать удаление каждого элемента по крестику справа
+                </p>
+              </div>
+              <span class="list__cross">❌</span>
+            </div>
+            <div class="list">
+              <div class="list__wrap-box">
+                <input class="list__checkbox" type="checkbox" />
+                <p class="list__text">Сделать добавление элементов в список</p>
+              </div>
+              <span class="list__cross">❌</span>
+            </div>
+            <div class="list">
+              <div class="list__wrap-box">
+                <input class="list__checkbox" type="checkbox" />
+                <p class="list__text">Сверстать тудушку</p>
+              </div>
+              <span class="list__cross">❌</span>
+            </div>
+              <div class="list">
+              <div class="list__wrap-box">
+                <input class="list__checkbox" type="checkbox" />
+                <p class="list__text">Сдать теорию</p>
+              </div>
+              <span class="list__cross">❌</span>
+            </div>
+          </div>
+          <div class="click">
+            <button class="click__delete-completed">Удалить завершенные</button>
+            <button class="click__delete-everything">Удалить все</button>
+          </div>
         </div>
       </section>
     </main>
