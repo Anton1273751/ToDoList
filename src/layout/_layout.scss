@@ -1,0 +1,23 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.btn {
+  background: 0;
+  border: 0;
+  color: inherit;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+button {
+  border: 0;
+  background: 0;
+  cursor: pointer;
+}
+.container {
+  width: 980px;
+  margin: 0 auto;
+  box-sizing: content-box;
+  padding: 0 24px;
+}
