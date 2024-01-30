@@ -1,23 +1,31 @@
-const crossNode = document.querySelector(".list__cross");
+const crossNode = document.querySelectorAll(".list__cross");
+const allCheckBoxNode = document.querySelectorAll(".list__checkbox");
+const btnAddNode = document.querySelector(".form__btn");
 const containerNode = document.querySelector(".container");
 const delAllNode = document.querySelector(".click__delete-everything");
 const listsNode = document.querySelector(".lists");
 const listNode = document.querySelector(".list");
+const listAllNode = document.querySelectorAll(".list");
 const btnRemoveNode = document.querySelector(".click");
 
-// const element = document.querySelector('button')
+// console.log(crossNode.length);
+// console.log(listNode);
+// console.log(allCheckBoxNode);
 
-// element.addEventListener('click', function (event) {
-//   console.log('Произошло событие', event.type)
-// })
-
-delAllNode.addEventListener("click", () => {
-  //Удалает все
-
-  listsNode.remove("active");
-  btnRemoveNode.remove("active");
+crossNode.forEach((elem) => {
+  //Получилось
+  elem.addEventListener("click", (e) => {
+    e.preventDefault();
+    elem.closest(".list").remove();
+  });
 });
 
-crossNode.addEventListener("click", (event) => {
-  listNode.remove("active");
+btnAddNode.addEventListener("click", (e) => {
+  e.preventDefault();
+  // listsNode.classList.add("active");
+});
+
+delAllNode.addEventListener("click", (e) => {
+  listsNode.remove("active");
+  btnRemoveNode.remove("active");
 });
