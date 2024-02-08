@@ -63,11 +63,12 @@
 
 .lists {
   display: flex;
-  // display: none;
+
   margin: 0 auto;
   flex-direction: column;
   align-items: start;
   gap: 25px;
+  padding: 15px;
 }
 .list {
   display: flex;
@@ -82,6 +83,7 @@
     width: 16px;
     height: 16px;
   }
+
   &__text {
     margin-left: 16px;
     color: #54595e;
